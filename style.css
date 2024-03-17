@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #993d3d;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+/* Define the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the project elements */
+.project {
+    animation: fadeIn 1s ease forwards; /* 1s duration, ease transition, stay at end of animation */
+    opacity: 0; /* Initially hidden */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #f30e0e;
+
+}
+.animated {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.6s ease; /* Smooth transition */
+}
+
+/* Animation classes */
+.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Add delay for individual projects */
+#project1 {
+    background-color: #bfe0f0; 
+    animation-delay: 0.5s; /* Delay for first project */
+}
+
+#project2 {
+    background-color: #bfe0f0; 
+    animation-delay: 1s; /* Delay for second project */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-description {
+    flex: 2;
+    background-color: #f1d2d269; /* Highlighted box background color */
+    padding: 20px;
+    margin-left: 20px; /* Adjust spacing between image and description */
+}
+.abo
+.about-description p {
+    margin: 0;
+    text-align: left;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-description {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
